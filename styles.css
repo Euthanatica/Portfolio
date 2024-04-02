@@ -1,12 +1,32 @@
 *, *::before, *::after {
     font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.full-screen-container {
+    display: grid;
+    /* justify-content: center; */
+    align-items: center;
+    border: 4px solid green;
+    height: 100vh;
+    padding: 0 300px;
+    /* background-color: #333; */
 }
 
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-columns: repeat(2, minmax(300px, 1fr)); */
     gap: 1rem;
-    align-items: start;
+    /* align-items: center; */
+    /* border: 4px solid blue; */
+    /* width: 55vw;
+    height: 85vh;
+    margin: auto; */
 }
 
 .card {
@@ -15,6 +35,8 @@
     border: 1px solid #777;
     border-radius: 0.25rem;
     overflow: hidden;
+    text-align: center;
+    position: relative;
 }
 
 .card.card-shadow {
@@ -42,12 +64,10 @@
     object-fit: cover;
     object-position: center;
     transition: 200ms transform ease-in-out;
-    
 }
 
 .card:hover > .card-header.card-image > img {
     transform: scale(1.025);
-    
 }
 
 .card-body {
@@ -61,6 +81,16 @@
     padding-top: 0;
 }
 
+.card a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    color: transparent;
+}
+
 .btn {
     --color: hsl(200, 50%, 50%);
     background: var(--color);
@@ -70,6 +100,7 @@
     padding: 0.5em 0.75em;
     border-radius: .25em;
     cursor: pointer;
+
 }
 
 .btn:hover, .btn:focus {
