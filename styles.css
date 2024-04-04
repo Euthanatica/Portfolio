@@ -21,6 +21,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
+    /* width: calc(100% - 1rem);
+    margin: 0 auto; */
     padding: 1rem;
     /* grid-template-columns: repeat(2, minmax(300px, 1fr)); */
     /* align-content: center; */
