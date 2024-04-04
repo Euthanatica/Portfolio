@@ -7,16 +7,6 @@ body {
     margin: 0;
 }
 
-.full-screen-container {
-    /* display: flex;
-    justify-content: center; */
-    /* align-items: center; */
-    /* height: 100dvh; */
-    /* padding: 96px */
-    /* justify-content: center; */
-    /* padding: 0 300px; */
-}
-
 .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
